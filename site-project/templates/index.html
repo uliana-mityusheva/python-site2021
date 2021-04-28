@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    body {
+        background: url("https://images.wallpaperscraft.ru/image/gradient_goluboj_rozovyj_178820_3840x2160.jpg");
+        background-attachment: fixed;
+   }
+</style>
+<body>
+<b><font size = "7", color = #f0f8ff>Новости спорта</font></b><br><br>
+
+{% for num in table %}
+    <b><font color="#e6e6fa">{{num[0]}}</font></b><br>
+    <b><font size = "4", color="#f0ffff">{{num[1]}}</font></b><br>
+    <a href = {{num[2]}}>{{num[2]}}</a><br><br><br>
+{% endfor %}
+
+</body>
+</html>
